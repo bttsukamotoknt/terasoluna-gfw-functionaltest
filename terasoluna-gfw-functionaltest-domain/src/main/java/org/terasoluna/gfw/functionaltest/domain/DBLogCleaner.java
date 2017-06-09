@@ -31,7 +31,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class DBLogCleaner {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(
+ 				   private static final Logger LOGGER = LoggerFactory.getLogger(
             DBLogCleaner.class);
 
     private long savedPeriodMinutes = TimeUnit.MINUTES.toHours(24);
