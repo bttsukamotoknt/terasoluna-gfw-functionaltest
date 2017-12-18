@@ -27,6 +27,7 @@ public class FirefoxDriverFactoryBean implements FactoryBean<FirefoxDriver> {
         profile.setPreference("browser.startup.homepage_override.mstone",
                 "ignore");
         profile.setPreference("network.proxy.type", 0);
+        profile.setPreference(FirefoxProfile.ALLOWED_HOSTS_PREFERENCE, "localhost");
         return new FirefoxDriver(profile);
     }
 
